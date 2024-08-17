@@ -1,8 +1,12 @@
-import site
+# import site
 
-print(site.getsitepackages())
+# print(site.getsitepackages())
 
-import sys
+# import sys
 
-for path in sys.path:
-    print(path)
+# for path in sys.path:
+#     print(path)
+
+from pipeline.extract import extract_from_excel
+
+print(extract_from_excel('data/input'))
