@@ -8,5 +8,14 @@
 #     print(path)
 
 from pipeline.extract import extract_from_excel
+from pipeline.transform import concat_dataframes
+from pipeline.load import load_excel
 
-print(extract_from_excel('data/input'))
+
+if __name__ == "__main__":
+    input_path = 'data/input'
+    output_path = 'data/output'
+    dataframe_list = extract_from_excel(input_path)
+    concatenated_dataframe = concat_dataframes(dataframe_list)
+    load_excel(concatenated_dataframe, output_path, "concatenated_excel")
+    print("Process finished")

@@ -15,8 +15,13 @@ def extract_from_excel(path: str) -> List[pd.DataFrame]:
     all_files = glob.glob(os.path.join(path, "*.xlsx"))
     if not all_files:
         raise ValueError("No Excel files found in the specified folder")
+    
+    all_data = []
+    for file in all_files:
+        print(f"Reading file: {file}")
+        all_data.append(pd.read_excel(file))
 
-    all_data = [pd.read_excel(file) for file in all_files]
+    #all_data = [pd.read_excel(file) for file in all_files]
 
     return all_data
     
