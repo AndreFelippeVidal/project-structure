@@ -47,3 +47,5 @@ known_third_party = []`
 8. pre-commit -> `poetry add pre-commit`
     1. Need to create `.pre-commit-config.yaml` on project root folder.(pre-commit docs)[https://pre-commit.com/]
     2. `pre-commit install`
+    3. every commit will only be done if follows those best practices defined in pre-commit-config file.
+    4. `poetry remove pre-commit`
