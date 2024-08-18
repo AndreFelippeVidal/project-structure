@@ -1,4 +1,5 @@
 import pandas as pd
+
 from project_structure.pipeline.transform import concat_dataframes
 
 df1 = pd.DataFrame({"col1": [1, 2, 3], "col2": ["a", "b", "c"]})

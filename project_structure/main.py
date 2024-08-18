@@ -8,9 +8,8 @@
 #     print(path)
 
 from pipeline.extract import extract_from_excel
-from pipeline.transform import concat_dataframes
 from pipeline.load import load_excel
-
+from pipeline.transform import concat_dataframes
 
 if __name__ == "__main__":
     input_path = 'data/input'

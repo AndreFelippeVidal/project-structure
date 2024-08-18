@@ -1,8 +1,8 @@
-import os
 import glob
+import os
+from typing import List
 
 import pandas as pd
-from typing import List
 
 path = "data/input"
 
