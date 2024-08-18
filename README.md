@@ -26,7 +26,7 @@ Your virtual environment and depenencies should be installed and running.
 
 1. isort usage to order imports -> on root folder `isort .`
 2. blue used to format python code -> on root folder `blue .`
-3. adding to pyproject.toml to allow black to be the main formatter. 
+3. adding to pyproject.toml to allow black to be the main formatter.
 `[tool.isort]
 profile = "black"
 known_third_party = []`
@@ -44,3 +44,6 @@ known_third_party = []`
     3. `mkdocs build` -> create the strucutre for a website if you want to deploy somewhere else
     4. `mkdocs gh-deploy` -> to deploy the page to github pages
     5. with taskipy we added a task called kill to kill what is running on port 8000 with `task kill`
+8. pre-commit -> `poetry add pre-commit`
+    1. Need to create `.pre-commit-config.yaml` on project root folder.(pre-commit docs)[https://pre-commit.com/]
+    2. `pre-commit install`
