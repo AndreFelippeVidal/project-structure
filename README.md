@@ -18,3 +18,14 @@ Your virtual environment and depenencies should be installed and running.
 ## Running the project
 
 1. python main.py
+
+
+## Additional info
+
+1. isort usage to order imports -> on root folder `isort .`
+2. blue used to format python code -> on root folder `blue .`
+3. adding to pyproject.toml to allow black to be the main formatter. 
+`[tool.isort]
+profile = "black"
+known_third_party = []`
+

@@ -1,3 +1,5 @@
+"""This is the extract module."""
+
 import glob
 import os
 from typing import List
@@ -9,7 +11,7 @@ path = 'data/input'
 
 def extract_from_excel(path: str) -> List[pd.DataFrame]:
     """
-    Function to extract data from Excel files.
+    Extract data from Excel files.
 
     type: input_folder: str
     """

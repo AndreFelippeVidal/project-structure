@@ -6,6 +6,7 @@
 
 # for path in sys.path:
 #     print(path)
+"""Main module of the ETL process."""
 
 from pipeline.extract import extract_from_excel
 from pipeline.load import load_excel
