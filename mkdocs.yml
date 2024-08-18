@@ -1,0 +1,22 @@
+site_name: ETL with Excel files from scrath - Initial Data Pipeline from Scratch
+theme: 
+  name: material 
+  pallete: 
+    primary: green
+  language: en
+
+repo_name: AndreFelippeVidal/project-structure
+repo_url: https://github.com/AndreFelippeVidal/project-structure/
+
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python
+

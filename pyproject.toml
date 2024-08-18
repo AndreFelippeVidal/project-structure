@@ -15,6 +15,11 @@ blue = "^0.9.1"
 pydocstyle = "^6.3.0"
 pip-audit = "^2.7.3"
 taskipy = "^1.13.0"
+mkdocs = "^1.6.0"
+mkdocstrings-python = "^1.10.8"
+pygments = "^2.18.0"
+mkdocs-material = "^9.5.31"
+pymdown-extensions = "^10.9"
 
 
 [build-system]
@@ -27,3 +32,8 @@ known_third_party = []
 
 [tool.taskipy.tasks]
 format = "isort . && blue ."
+test = "poetry run pytest -v"
+run = """
+poetry run python project_structure/main.py
+"""
+kill = "kill -9 $(lsof -t -i :8000)"  # kill app on port 8000(mkdocs serve)
