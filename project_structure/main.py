@@ -18,4 +18,4 @@ if __name__ == '__main__':
     dataframe_list = extract_from_excel(input_path)
     concatenated_dataframe = concat_dataframes(dataframe_list)
     load_excel(concatenated_dataframe, output_path, 'concatenated_excel')
-    print('Process finished')
+    print(f'Process finished. Check {output_path}')
