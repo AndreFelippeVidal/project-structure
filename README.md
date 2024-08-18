@@ -20,7 +20,7 @@ Your virtual environment and depenencies should be installed and running.
 1. python main.py
 
 
-## Additional info
+## Additional info (optional)
 
 1. isort usage to order imports -> on root folder `isort .`
 2. blue used to format python code -> on root folder `blue .`
@@ -28,4 +28,10 @@ Your virtual environment and depenencies should be installed and running.
 `[tool.isort]
 profile = "black"
 known_third_party = []`
+4. pydocstyle used to check which modules, packages or funtions doesn't have a docstring. `pydocstyle .`
+5. do vulnerabiluty checks on the installed libraries `pip-audit`
+6. taskipy to automate all the tasks that we want the code to perform, this is done with poetry. (pyproject.toml)
+[tool.taskipy.tasks]
+format = "isort . && blue ."
 
+after adding to poetry file, run `task format`

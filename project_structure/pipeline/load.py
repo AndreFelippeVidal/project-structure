@@ -9,7 +9,7 @@ def load_excel(
     dataframe: pd.DataFrame, output_pah: str, file_name: str
 ) -> str:
     """Save dataframe into excel file.
-    
+
     args:
     dataframe (pd.Dataframe): dataframe to be saved.
     output_path (str): path for the file to be saved.
