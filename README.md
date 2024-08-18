@@ -19,7 +19,7 @@ Your virtual environment and depenencies should be installed and running.
 
 ## Running the project
 
-1. python main.py
+1. `python project_structure/main.py`
 
 
 ## Additional info (optional)
